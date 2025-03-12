@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="logo">
+      <a href="#home">My Portfolio</a>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#case-studies">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta">CTA</a></li>
+    </ul>
+    <button class="mode-toggle" id="modeToggle">Dark Mode</button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Anish Kumar Pal</h1>
+      <p>Professional Machine Learning Engineer</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+        <!-- Link to download resume (ensure resume.pdf is available in your project folder) -->
+        <a href="https://drive.google.com/file/d/1WM-OGKkmjK0vLmYwyLEl87yBBQWm6Fp3/view?usp=drive_link" download class="download-resume">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Anish, a passionate Machine Learning Engineer at Rugged Monitoring. With a robust foundation in AI, deep learning, and predictive analytics, I design intelligent solutions that power real‑time monitoring and predictive maintenance of critical assets.
+      </p>
+      <h3>Resume</h3>
+      <ul>
+        <li>Education: Bachelor of Technology in Electrical Engineering</li>
+        <li>Experience: 3+ years in Machine Learning</li>
+        <li>Skills: Python, C++, C, R, Machine Learning, NLP, CV, CUDA</li>
+      </ul>
+    </div>
+    <div class="photo">
+      <img src="./images/prof_photo.jpg" alt="Anish Kumar Pal" />
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="images/Veg_Encroachment.png" alt="Project 1" />
+        <div class="portfolio-title">
+          Vegetation Encroachment Detection System
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/Solar.png" alt="Project 2" />
+        <div class="portfolio-title">
+          Solar Panel Area Detection
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/unlearning.png" alt="Project 3" />
+        <div class="portfolio-title">
+          Deep Unlearning Framework
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/RLA.jpeg" alt="Project 4" />
+        <div class="portfolio-title">
+          Asset Life Assessment System
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES SECTION -->
+  <section id="case-studies" class="section">
+    <h2>Case Studies</h2>
+    <div class="case-study">
+      <h3>Vegetation Encroachment Detection</h3>
+      <p>
+        This project is designed to detect and monitor vegetation encroachment on power lines and other critical infrastructure. It leverages computer vision and machine learning techniques to analyze satellite imagery and identify areas where vegetation is growing too close to the infrastructure, potentially causing safety hazards and disruptions to power supply.
+      </p>
+      <h3>Solar Panel Detection and Calculation of Area covered by Solar Panels</h3>
+      <p>
+        This project is designed to detect and calculate the area covered by solar panels in a given image. It leverages computer vision and machine learning techniques to analyze satellite imagery and identify areas where solar panels are installed.
+      </p>
+      <h3>Deep Unlearning of a particular class from a multi-class set.</h3>
+      <p>
+        This project is designed to remove a particular class in our case Elephant class from a multi-class set(Animal class). It leverages machine learning techniques to analyze the data and identify the class to be removed.
+      </p>
+      <h3>Remaining Life Assessment of Electrical Assets using Health Index and Machine Learning</h3>
+      <p>
+        This project is designed to assess the remaining life of electrical assets using health index of the asset. It uses regression models to plot the remaining life curve.
+      </p>
+      <h3>AstroGrid</h3>
+      <p>
+        This project is designed to efficiently process and track the positions of up to 30,000 satellites using Two-Line Element (TLE) data. It calculates satellite positions over time, converts these positions from Earth-Centered Earth-Fixed (ECEF) coordinates to latitude, longitude, and altitude (LLA), and filters the data based on user-defined geographical regions. The project is optimized for performance using GPU acceleration (via CuPy) and distributed computing.
+      </p>
+      <h3>Business Data Management - Optimising the Sales of a Medium-Scale Grocery Shop</h3>
+      <p>
+        The primary objective of the capstone project is to augment net profit, optimize inventory, and
+        establish effective control over goods flow. To achieve this, an in-depth analysis of sales data,
+        coupled with fluctuations in purchase prices throughout the month, will be conducted.
+        Identifying gaps and areas for improvement in the existing strategy will be a critical
+        component of the project.
+      </p>
+      <h3>Autonomous Car with Lane Detection</h3>
+      <p>
+        This project leverages OpenCV to implement a real‑time road lane detection system. It processes live video feeds using advanced image processing methods—such as color space conversion, edge detection, and the Hough transform—to accurately identify and highlight lane markings on the road. By dynamically adapting to varying lighting conditions and road geometries, the system not only enhances driving safety but also serves as a foundational step toward developing autonomous driving and advanced driver-assistance systems.
+      </p>
+      <h3>Hand Tracking: Screen Brightness Control System</h3>
+      <p>
+        This project is a real‑time hand gesture-based screen brightness controller that utilizes computer vision and gesture recognition to enhance user interaction. Using OpenCV in combination with MediaPipe, the system detects and tracks hand landmarks from a webcam feed, calculating the distance between key fingertips to determine the desired brightness level. This distance is dynamically interpolated to adjust the screen's brightness via the screen_brightness_control library, resulting in an intuitive, touch-free method to control your display.
+      </p>
+      
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:palanish12@gmail.com">palanish12@gmail.com</a></p>
+      <p>Phone: +91-9981513582</p>
+      <p>
+        Social:
+        <a href="https://www.linkedin.com/in/anish-pal-079200229/">LinkedIn</a> |
+        <a href="https://github.com/anishpal2235">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION (Optional) -->
+<!-- BLOG SECTION -->
+<section id="blog" class="section">
+  <h2>Blog</h2>
+  <div class="blog-container">
+      <article class="blog-post">
+          <span class="blog-number">01</span>
+          <h3>Deep Unlearning: Redefining Forgetfulness in Neural Networks</h3>
+          <div class="blog-meta">
+              <span class="blog-date">March 2024</span>
+              <span class="blog-category">Machine Learning</span>
+          </div>
+          <div class="blog-content">
+              <p>
+                  In the rapidly evolving world of artificial intelligence, deep unlearning is emerging as a groundbreaking approach that enables models to selectively "forget" certain pieces of data without a complete retrain.
+              </p>
+              <p>
+                  The concept involves isolating and neutralizing the impact of specific data points or classes—imagine, for example, unlearning the "elephant" class from a broad animal classification model.
+              </p>
+              <p>
+                  As research in deep unlearning advances, it holds promise for a wide range of applications—from privacy-preserving machine learning to dynamic model updates.
+              </p>
+          </div>
+      </article>
+
+      <article class="blog-post">
+          <span class="blog-number">02</span>
+          <h3>Asset Life Assessment: Advanced Analytics in Industrial Maintenance</h3>
+          <div class="blog-meta">
+              <span class="blog-date">February 2024</span>
+              <span class="blog-category">Data Analytics</span>
+          </div>
+          <div class="blog-content">
+              <p>
+                  In today's industrial landscape, ensuring the reliability and efficiency of critical assets is essential
+              </p>
+              <p>
+                  The process begins with the computation of a <strong>Conditional Factor (CF)</strong> which serves as an aggregate measure of asset health.
+              </p>
+              <p>
+                  Building on the CF, our model employs a <strong>Weibull Polynomial Analysis</strong> to forecast the asset's degradation over time.
+              </p>
+              <p>
+                  The outcome of this analysis is instrumental in planning preventive maintenance, reducing downtime, and optimizing replacement strategies.
+              </p>
+          </div>
+      </article>
+  </div>
+</section>
+  <!-- FAQ SECTION (Optional) -->
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>What motivated me to pursue a BS in Data Science and Applications from IIT Madras alongside my B.Tech in Electrical Engineering?</h3>
+      <p>I pursued a BS in Data Science and Applications from IIT Madras alongside my B.Tech in Electrical Engineering to build a strong interdisciplinary foundation. Electrical Engineering provides a deep understanding of core technical concepts, while Data Science equips me with the skills to analyze, model, and derive insights from complex data. By combining these fields, I can leverage data-driven approaches to solve engineering problems, optimize systems, and work on cutting-edge technologies like AI, machine learning, and predictive analytics.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why is it important to work on Machine Learning (ML) projects while studying a Data Science course?</h3>
+      <p>Working on ML projects during a Data Science course is crucial for bridging the gap between theoretical knowledge and practical application. These projects provide hands-on experience in data preprocessing, model selection, hyperparameter tuning, and performance evaluation—skills essential for real-world problem-solving. They also help in understanding the challenges of working with real datasets, such as handling missing data, feature engineering, and model deployment. Additionally, ML projects enhance problem-solving abilities, strengthen portfolios, and improve job prospects by showcasing applied expertise to potential employers.</p>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION (CTA) SECTION -->
+  <section id="cta" class="section">
+    <h2>Ready to work together?</h2>
+    <p>Let's create something amazing.</p>
+    <button onclick="scrollToSection('contact')">Get in Touch</button>
+  </section>
+
+<!-- RECRUITER FORM SECTION -->
+<section id="recruiter" class="section">
+    <div class="section-content">
+        <h2>Recruiter Form</h2>
+        <form name="submit-to-google-sheet" novalidate>
+            <div class="form-group required">
+                <input name="name" type="text" 
+                       placeholder="Name" 
+                       required 
+                       pattern="[A-Za-z\s]+" 
+                       title="Please enter a valid name">
+                <span class="warning-icon">⚠️</span>
+                <span class="error-message">Please enter your name</span>
+            </div>
+            
+            <div class="form-group required">
+                <input name="email" 
+                       type="email" 
+                       placeholder="Email" 
+                       required>
+                <span class="warning-icon">⚠️</span>
+                <span class="error-message">Please enter a valid email address</span>
+            </div>
+            
+            <div class="form-group">
+                <textarea name="message" 
+                          placeholder="Message (optional)"></textarea>
+            </div>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+  
+  <!-- Success Popup -->
+  <div id="success-popup" class="popup">
+    <div class="popup-content">
+      <div class="success-checkmark">
+        <div class="check-icon">
+          <span class="icon-line line-tip"></span>
+          <span class="icon-line line-long"></span>
+          <div class="icon-circle"></div>
+          <div class="icon-fix"></div>
+        </div>
+      </div>
+      <p>Details submitted successfully!</p>
+    </div>
+  </div>
+  
+  <!-- Error Popup -->
+  <div id="error-popup" class="popup error">
+    <div class="popup-content">
+      <div class="error-icon">
+        <div class="error-x">
+          <div class="error-line-1"></div>
+          <div class="error-line-2"></div>
+        </div>
+        <div class="error-circle"></div>
+      </div>
+      <p class="error-message"></p>
+      <p>Details not submitted. Please try again.</p>
+    </div>
+  </div>
+  
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Anish Kumar Pal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcBnIPpmL5-d3Tcqfpjki_hw7n4XCOLhYI_khS8SXQOfwOU6dsXpZr8vE1HHTm5hczxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
